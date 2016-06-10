@@ -3,10 +3,10 @@
 <ul class="breadcrumb">
     <li>
         <i class="icon-home"></i>
-        <a href="index.html">Home</a>
+        <a href="index.html">Inicio</a>
         <i class="icon-angle-right"></i>
     </li>
-    <li><a href="#">Manage admin</a></li>
+    <li><a href="#">Gestion admin</a></li>
 </ul>
 
 @if(count($categories) > 0)
@@ -25,7 +25,7 @@
                     <form class="form-horizontal" role="form" action="" method="post">
                         <fieldset>
                             <div class="control-group">
-                                <label class="control-label">Name*:</label>
+                                <label class="control-label">Nombre*:</label>
                                 <div class="controls">
                                     <input type="text" name="name" value="{{  isset($_POST['name']) ?  $_POST['name'] : $stream->name}}">
                                 </div>
@@ -62,7 +62,7 @@
                             </div>
 
                             <div class="control-group">
-                                <label class="control-label">Bit stream filter:</label>
+                                <label class="control-label">Bit stream filtro:</label>
                                 <div class="controls">
                                     <label class="checkbox">
                                         <div class="checker" id="uniform-optionsCheckbox2"><span><input type="checkbox" name="bitstreamfilter" id="" value="1" {{ $stream->bitstreamfilter ? "checked" : ""}}></span></div>
@@ -71,7 +71,7 @@
                             </div>
 
                             <div class="control-group">
-                                <label class="control-label">Category*</label>
+                                <label class="control-label">Categoria*</label>
                                 <div class="controls">
                                     <select name="category" id="selectError3" data-rel="chosen">
                                         <option value='{{ $stream->category ? $stream->category->id : "" }}'>{{ $stream->category ? $stream->category->name : "Select" }}</option>
@@ -95,7 +95,8 @@
                             </div>
 
                             <div class="form-actions">
-                                <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary">Guardar</button>
+                                <span class="label label-important">  *   : campos obligatorios </span>
                             </div>
                         </fieldset>
                     </form>
@@ -111,7 +112,7 @@
 @else
     <div class="alert alert-error">
         <button type="button" class="close" data-dismiss="alert">×</button>
-        <strong>Error!</strong> You need to create an category!
+        <strong>Error!</strong> Antes tienes que crear una Categoria!
     </div>
 
 @endif

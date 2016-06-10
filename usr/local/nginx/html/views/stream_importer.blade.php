@@ -3,10 +3,10 @@
 <ul class="breadcrumb">
     <li>
         <i class="icon-home"></i>
-        <a href="index.html">Home</a>
+        <a href="index.html">Inicio</a>
         <i class="icon-angle-right"></i>
     </li>
-    <li><a href="#">Playlist importer</a></li>
+    <li><a href="#">Importar Lista</a></li>
 </ul>
 
 @if(count($categories) > 0)
@@ -25,7 +25,7 @@
                     <form class="form-horizontal" role="form" action="" method="post">
                         <fieldset>
                             <div class="control-group">
-                                <label class="control-label">Playlist importer:</label>
+                                <label class="control-label">Importar Lista:</label>
                                 <div class="controls">
                                     <textarea name="import" id=""  style="width: 100%;"  rows="10"
                                               placeholder="#EXTINF:0,NAMEOFSTREAM1&#10http://url1.com:8000/nameofstream1&#10#EXTINF:0,NAMEOFSTREAM2&#10http://url2.com:8000/nameofstream2&#10#EXTINF:0,NAMEOFSTREAM3&#10http://url3.com:8000/nameofstream3&#10"></textarea>
@@ -53,7 +53,7 @@
                             </div>
 
                             <div class="control-group">
-                                <label class="control-label">Category</label>
+                                <label class="control-label">Categoria</label>
                                 <div class="controls">
                                     <select name="category" id="selectError3" data-rel="chosen">
                                         <option value='{{ $stream->category ? $stream->category->id : "" }}'>{{ $stream->category ? $stream->category->name : "Select" }}</option>
@@ -77,7 +77,7 @@
                             </div>
 
                             <div class="form-actions">
-                                <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary">Guardar</button>
                             </div>
                         </fieldset>
                     </form>
@@ -93,7 +93,7 @@
 @else
     <div class="alert alert-error">
         <button type="button" class="close" data-dismiss="alert">×</button>
-        <strong>Error!</strong> You need to create an category!
+        <strong>Error!</strong> Antes tienes que crear Categoria!
     </div>
 
 @endif

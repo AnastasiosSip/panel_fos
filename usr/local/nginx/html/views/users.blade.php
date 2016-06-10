@@ -4,10 +4,10 @@
 <ul class="breadcrumb">
     <li>
         <i class="icon-home"></i>
-        <a href="index.html">Home</a>
+        <a href="index.html">Inicio</a>
         <i class="icon-angle-right"></i>
     </li>
-    <li><a href="#">Users</a></li>
+    <li><a href="#">Usuarios</a></li>
 </ul>
 
 @if(count($users) > 0)
@@ -26,16 +26,16 @@
                     <thead>
                     <tr>
                         <th>#</th>
-                        <th>Name</th>
-                        <th>Password</th>
-                        <th>Status</th>
-                        <th>Exp date</th>
-                        <th>Category</th>
-                        <th>File</th>
+                        <th>Nombre</th>
+                        <th>Contraseña</th>
+                        <th>Estado</th>
+                        <th>Fecha Fin</th>
+                        <th>Categoria</th>
+                        <th>Archivo</th>
                         <th>Last viewed channel</th>
                         <th>IP</th>
                         <th>User agent</th>
-                        <th>Action</th>
+                        <th>Accion</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -115,7 +115,7 @@
 @else
     <div class="alert alert-info">
         <button type="button" class="close" data-dismiss="alert">×</button>
-         No users found
+         No hay Usuarios
     </div>
 @endif
 @stop

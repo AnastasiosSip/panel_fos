@@ -3,7 +3,7 @@
 <ul class="breadcrumb">
     <li>
         <i class="icon-home"></i>
-        <a href="index.html">Home</a>
+        <a href="index.html">Inicio</a>
         <i class="icon-angle-right"></i>
     </li>
     <li><a href="#">Admin</a></li>
@@ -24,14 +24,14 @@
                     <form class="form-horizontal" role="form" action="" method="post">
                         <fieldset>
                             <div class="control-group">
-                                <label class="control-label">Name:</label>
+                                <label class="control-label">Nombre:</label>
                                 <div class="controls">
                                     <input type="text" name="username" value="{{  isset($_POST['username']) ?  $_POST['username'] : $admin->username}}">
                                 </div>
                             </div>
 
                             <div class="control-group">
-                                <label class="control-label">password:</label>
+                                <label class="control-label">Contraseña:</label>
                                 <div class="controls">
                                     <input type="text" name="password" value="">
                                 </div>
@@ -39,7 +39,7 @@
 
 
                             <div class="form-actions">
-                                <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary">Guardar</button>
                             </div>
                         </fieldset>
                     </form>

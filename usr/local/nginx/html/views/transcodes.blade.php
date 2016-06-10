@@ -3,7 +3,7 @@
     <ul class="breadcrumb">
         <li>
             <i class="icon-home"></i>
-            <a href="index.html">Home</a>
+            <a href="index.html">Inicio</a>
             <i class="icon-angle-right"></i>
         </li>
         <li><a href="#">Admins</a></li>
@@ -13,7 +13,7 @@
         <div class="row-fluid sortable">
             <div class="box span12">
                 <div class="box-header" data-original-title>
-                    <h2><i class="halflings-icon todo"></i><span class="break"></span>Categories</h2>
+                    <h2><i class="halflings-icon todo"></i><span class="break"></span>Categorias</h2>
                 </div>
                 <div class="box-content">
                     @if($message)
@@ -25,8 +25,8 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Username</th>
-                            <th>Action</th>
+                            <th>Nombre Usuario</th>
+                            <th>Accion</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -54,7 +54,7 @@
     @else
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert">×</button>
-            No transcodes found
+            No hay transcodes
         </div>
     @endif
 @stop

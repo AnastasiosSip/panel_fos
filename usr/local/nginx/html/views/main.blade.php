@@ -45,9 +45,9 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-title">
-                                <span>Account Settings</span>
+                                <span>Ajustes Cuenta</span>
                             </li>
-                            <li><a href="index.php?logout=true"><i class="halflings-icon off"></i> Logout</a></li>
+                            <li><a href="index.php?logout=true"><i class="halflings-icon off"></i> Salir</a></li>
                         </ul>
                     </li>
                     <!-- end: User Dropdown -->
@@ -67,19 +67,19 @@
         <div id="sidebar-left" class="span2">
             <div class="nav-collapse sidebar-nav">
                 <ul class="nav nav-tabs nav-stacked main-menu">
-                    <li><a href="dashboard.php"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>
+                    <li><a href="dashboard.php"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Informacion</span></a></li>
                     <li><a href="streams.php"><i class="icon-tasks"></i><span class="hidden-tablet"> Streams</span></a></li>
-                    <li><a href="manage_stream.php"><i class="icon-plus"></i><span class="hidden-tablet"> Add streams</span></a></li>
-                    <li><a href="users.php"><i class="icon-user"></i><span class="hidden-tablet"> Users</span></a></li>
-                    <li><a href="manage_user.php"><i class="icon-plus"></i><span class="hidden-tablet"> Add users</span></a></li>
-                    <li><a href="categories.php"><i class="icon-user"></i><span class="hidden-tablet"> Category</span></a></li>
-                    <li><a href="manage_category.php"><i class="icon-list"></i><span class="hidden-tablet"> Add category</span></a></li>
-                    <li><a href="stream_importer.php"><i class="icon-list"></i><span class="hidden-tablet"> Playlist importer</span></a></li>
+                    <li><a href="manage_stream.php"><i class="icon-plus"></i><span class="hidden-tablet"> Añadir streams</span></a></li>
+                    <li><a href="users.php"><i class="icon-user"></i><span class="hidden-tablet"> Usuarios</span></a></li>
+                    <li><a href="manage_user.php"><i class="icon-plus"></i><span class="hidden-tablet"> Añadir usuarios</span></a></li>
+                    <li><a href="categories.php"><i class="icon-user"></i><span class="hidden-tablet"> Categoria</span></a></li>
+                    <li><a href="manage_category.php"><i class="icon-list"></i><span class="hidden-tablet"> Añadir categoria</span></a></li>
+                    <li><a href="stream_importer.php"><i class="icon-list"></i><span class="hidden-tablet"> Importar archivo</span></a></li>
                     <li><a href="transcodes.php"><i class="icon-tasks"></i><span class="hidden-tablet"> Transcode profile</span></a></li>
-                    <li><a href="manage_transcode.php"><i class="icon-plus"></i><span class="hidden-tablet"> Add transcode profile</span></a></li>
+                    <li><a href="manage_transcode.php"><i class="icon-plus"></i><span class="hidden-tablet"> Añadir transcode profile</span></a></li>
                     <li><a href="admins.php"><i class="icon-user"></i><span class="hidden-tablet"> Admin</span></a></li>
-                    <li><a href="manage_admin.php"><i class="icon-plus"></i><span class="hidden-tablet"> Add admin</span></a></li>
-                    <li><a href="settings.php"><i class="icon-list"></i><span class="hidden-tablet"> Settings</span></a></li>
+                    <li><a href="manage_admin.php"><i class="icon-plus"></i><span class="hidden-tablet"> Añadir admin</span></a></li>
+                    <li><a href="settings.php"><i class="icon-list"></i><span class="hidden-tablet"> Ajustes</span></a></li>
 
                 </ul>
             </div>
@@ -88,8 +88,8 @@
 
         <noscript>
             <div class="alert alert-block span10">
-                <h4 class="alert-heading">Warning!</h4>
-                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+                <h4 class="alert-heading">Peligro!</h4>
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> activada para utilizar este sitio.</p>
             </div>
         </noscript>
 

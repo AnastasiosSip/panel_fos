@@ -3,10 +3,10 @@
     <ul class="breadcrumb">
         <li>
             <i class="icon-home"></i>
-            <a href="index.html">Home</a>
+            <a href="index.html">Inicio</a>
             <i class="icon-angle-right"></i>
         </li>
-        <li><a href="#">Manage user</a></li>
+        <li><a href="#">Gestion usuario</a></li>
     </ul>
 
     @if(count($categories) > 0)
@@ -25,14 +25,14 @@
                 <form class="form-horizontal" role="form" action="" method="post">
                     <fieldset>
                         <div class="control-group">
-                            <label class="control-label">Username:</label>
+                            <label class="control-label">Nombre Usuario:</label>
                             <div class="controls">
                                 <input type="text" name="username" value="{{  isset($_POST['username']) ?  $_POST['username'] : $user->username}}">
                             </div>
                         </div>
 
                         <div class="control-group">
-                            <label class="control-label">Password:</label>
+                            <label class="control-label">Contraseña:</label>
                             <div class="controls">
                                 <input type="text" name="password" value="{{  isset($_POST['password']) ?  $_POST['password'] : $user->password}}">
                             </div>
@@ -40,15 +40,15 @@
 
 
                         <div class="control-group">
-                            <label class="control-label" for="date01">Exp date</label>
+                            <label class="control-label" for="date01">fecha fin</label>
                             <div class="controls">
                                 <input type="text" name="expdate" class="input-xlarge datepicker" id="date01" placeholder="0000-00-00" value="{{  isset($_POST['expdate']) ?  $_POST['expdate'] : $user->exp_date}}">
-                                <span class="help-inline">Unlimited? 0000-00-00 or Leave blank</span>
+                                <span class="help-inline">Ilimitado? 0000-00-00 or Leave blank</span>
                             </div>
                         </div>
 
                         {{--<div class="control-group">--}}
-                            {{--<label class="control-label" for="date01">Expire Date</label>--}}
+                            {{--<label class="control-label" for="date01">Fecha Fin</label>--}}
                             {{--<div class="controls">--}}
                                 {{--<input type="text" class="input-xlarge datepicker" id="date01" name="date" value="02/16/12">--}}
                             {{--</div>--}}
@@ -65,7 +65,7 @@
                         {{--</div>--}}
 
                         <div class="control-group">
-                            <label class="control-label">Active:</label>
+                            <label class="control-label">Activo:</label>
                             <div class="controls">
                                 <label class="checkbox">
                                     <div class="checker" id="uniform-optionsCheckbox2"><span><input type="checkbox" name="active" id="" value="1" {{ $user->active ? "checked" : ""}}></span></div>
@@ -74,7 +74,7 @@
                         </div>
 
                         <div class="control-group">
-                            <label class="control-label" for="selectError1">Categories:</label>
+                            <label class="control-label" for="selectError1">Categorias:</label>
                             <div class="controls">
                                 <select name="category[]" multiple data-rel="chosen">
                                     @foreach ($categories as $category)
@@ -85,7 +85,7 @@
                         </div>
 
                         <div class="form-actions">
-                            <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                            <button type="submit" name="submit" class="btn btn-primary">Guardar</button>
                         </div>
                     </fieldset>
                 </form>
@@ -103,7 +103,7 @@
     @else
         <div class="alert alert-error">
             <button type="button" class="close" data-dismiss="alert">×</button>
-            <strong>Error!</strong> You need to create an category!
+            <strong>Error!</strong> Antes tienes que crear una Categoria!
         </div>
 
     @endif

@@ -3,10 +3,10 @@
 <ul class="breadcrumb">
     <li>
         <i class="icon-home"></i>
-        <a href="index.html">Home</a>
+        <a href="index.html">Inicio</a>
         <i class="icon-angle-right"></i>
     </li>
-    <li><a href="#">Category</a></li>
+    <li><a href="#">Categoria</a></li>
 </ul>
 
 <div class="row-fluid sortable">
@@ -24,7 +24,7 @@
                     <form class="form-horizontal" role="form" action="" method="post">
                         <fieldset>
                             <div class="control-group">
-                                <label class="control-label">Name:</label>
+                                <label class="control-label">Nombre:</label>
                                 <div class="controls">
                                     <input type="text" name="name" value="{{  isset($_POST['name']) ?  $_POST['name'] : $category->name}}">
                                 </div>
@@ -32,7 +32,7 @@
 
 
                             <div class="form-actions">
-                                <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary">Guardar</button>
                             </div>
                         </fieldset>
                     </form>

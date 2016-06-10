@@ -3,10 +3,10 @@
 <ul class="breadcrumb">
     <li>
         <i class="icon-home"></i>
-        <a href="index.html">Home</a>
+        <a href="index.html">Inicio</a>
         <i class="icon-angle-right"></i>
     </li>
-    <li><a href="#">Settings</a></li>
+    <li><a href="#">Ajustes</a></li>
 </ul>
 
 <div class="row-fluid sortable">
@@ -48,20 +48,20 @@
                                 <label class="control-label">Web port:</label>
                                 <div class="controls">
                                     <input type="text" name="webport" value="{{  isset($_POST['webport']) ?  $_POST['webport'] : $setting->webport}}">
-                                    <span class="label label-important">Important: restart nginx manualy ( killall -9 nginx && /usr/local/nginx/sbin/nginx )</span>
+                                    <span class="label label-important">Importante: si cambias puerto resetea nginx manual por ssh ( killall -9 nginx && /usr/local/nginx/sbin/nginx )</span>
                                 </div>
                             </div>
 
                             <div class="control-group">
-                                <label class="control-label">HLS folder:</label>
+                                <label class="control-label">HLS carpeta:</label>
                                 <div class="controls">
                                     <input type="text" name="hlsfolder" value="{{  isset($_POST['hlsfolder']) ?  $_POST['hlsfolder'] : $setting->hlsfolder}}">
-                                    <span class="label label-important">Important: cannot be changed (BUG) hl</span>
+                                    <span class="label label-important">Importante: no cambiar (BUG) hl</span>
                                 </div>
                             </div>
 
                             <div class="control-group">
-                                <label class="control-label">Less secure streaming:</label>
+                                <label class="control-label">Streaming menos seguro:</label>
                                 <div class="controls">
                                     <label class="checkbox">
                                         <div class="checker" id="uniform-optionsCheckbox2"><span><input type="checkbox" name="less_secure" id="" value="1" {{ $setting->less_secure ? "checked" : ""}}></span></div>
@@ -71,7 +71,7 @@
 
 
                             <div class="form-actions">
-                                <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" name="submit" class="btn btn-primary">Guardar</button>
                             </div>
                         </fieldset>
                     </form>

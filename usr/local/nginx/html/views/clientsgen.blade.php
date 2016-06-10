@@ -3,10 +3,10 @@
 <ul class="breadcrumb">
     <li>
         <i class="icon-home"></i>
-        <a href="index.html">Home</a>
+        <a href="index.html">Inicio</a>
         <i class="icon-angle-right"></i>
     </li>
-    <li><a href="#">User clients</a></li>
+    <li><a href="#">Clientes</a></li>
 </ul>
 
 <div class="row-fluid sortable">

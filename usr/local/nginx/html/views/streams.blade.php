@@ -4,7 +4,7 @@
     <ul class="breadcrumb">
         <li>
             <i class="icon-home"></i>
-            <a href="index.html">Home</a>
+            <a href="index.html">Inicio</a>
             <i class="icon-angle-right"></i>
         </li>
         <li><a href="#">Streams</a></li>
@@ -32,12 +32,12 @@
                         <tr>
                             <th>#</th>
                             <td class="center"><input type="checkbox" id="checkall" value=""></td>
-                            <th>Name</th>
-                            <th>Status</th>
-                            <th>Category</th>
+                            <th>Nombre</th>
+                            <th>Estado</th>
+                            <th>Categoria</th>
                             <th>Video</th>
                             <th>Audio</th>
-                            <th>Action</th>
+                            <th>Accion</th>
                         </tr>
                         </thead>
                         <tbody>

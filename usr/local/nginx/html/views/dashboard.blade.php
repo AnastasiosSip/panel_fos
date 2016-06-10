@@ -4,27 +4,27 @@
     <ul class="breadcrumb">
         <li>
             <i class="icon-home"></i>
-            <a href="index.html">Home</a>
+            <a href="index.html">Inicio</a>
             <i class="icon-angle-right"></i>
         </li>
-        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Estadisticas</a></li>
     </ul>
 
     <div class="row-fluid">
 
         <a href="streams.php?running=1" class="quick-button metro greenLight span4">
             <i class="icon-tasks"></i>
-            <p>Streams</p>
+            <p>Streams Activos</p>
             <span class="badge">{{ $online }}</span>
         </a>
         <a href="streams.php?running=2" class="quick-button metro red span4">
             <i class="icon-tasks"></i>
-            <p>Offline streams</p>
+            <p>streams parados</p>
             <span class="badge">{{ $offline }}</span>
         </a>
         <a href="streams.php" class="quick-button metro blue span4">
             <i class="icon-tasks"></i>
-            <p>Total streams</p>
+            <p>streams Totales</p>
             <span class="badge">{{ $all }}</span>
         </a>
 
@@ -35,8 +35,8 @@
 
         <div class="span4" onTablet="span4" onDesktop="span4">
             <div class="circleStatsItemBox green">
-                <div class="header">Space</div>
-                <span class="percent">percent</span>
+                <div class="header">Espacio</div>
+                <span class="percent">%</span>
                 <div class="circleStat">
                     <input type="text" value="{{ $space['pr'] }}" class="whiteCircle" />
                 </div>
@@ -44,7 +44,7 @@
 
                 <span class="count">
                     <span class="number">{{ $space['count'] }}</span>
-                    <span class="unit">FREE</span>
+                    <span class="unit">LIBRE</span>
                 </span>
 
                     <span class="sep"> / </span>
@@ -59,14 +59,14 @@
         <div class="span4 noMargin" onTablet="span4" onDesktop="span4">
             <div class="circleStatsItemBox pink">
                 <div class="header">CPU</div>
-                <span class="percent">percent</span>
+                <span class="percent">%</span>
                 <div class="circleStat">
                     <input type="text" value="{{ $cpu['pr'] }}" class="whiteCircle" />
                 </div>
                 <div class="footer">
                 <span class="count">
                     <span class="number">{{ $cpu['count'] }}</span>
-                    <span class="unit"> USAGE</span>
+                    <span class="unit"> USADO</span>
                 </span>
 
                     <span class="sep"> / </span>
@@ -81,8 +81,8 @@
 
         <div class="span4" onTablet="span4" onDesktop="span4">
             <div class="circleStatsItemBox greenLight">
-                <div class="header">Memory</div>
-                <span class="percent">percent</span>
+                <div class="header">Memoria</div>
+                <span class="percent">%</span>
                 <div class="circleStat">
                     <input type="text" value="{{ $mem['pr'] }}" class="whiteCircle" />
                 </div>
@@ -90,7 +90,7 @@
 
                 <span class="count">
                     <span class="number">{{ $mem['count'] }}</span>
-                    <span class="unit">USAGE</span>
+                    <span class="unit">USADA</span>
                 </span>
 
                     <span class="sep"> / </span>

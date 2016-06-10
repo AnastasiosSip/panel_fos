@@ -3,17 +3,17 @@
     <ul class="breadcrumb">
         <li>
             <i class="icon-home"></i>
-            <a href="index.html">Home</a>
+            <a href="index.html">Inicio</a>
             <i class="icon-angle-right"></i>
         </li>
-        <li><a href="#">Categories</a></li>
+        <li><a href="#">Categorias</a></li>
     </ul>
 
     @if(count($categories) > 0)
         <div class="row-fluid sortable">
             <div class="box span12">
                 <div class="box-header" data-original-title>
-                    <h2><i class="halflings-icon todo"></i><span class="break"></span>Categories</h2>
+                    <h2><i class="halflings-icon todo"></i><span class="break"></span>Categorias</h2>
                 </div>
                 <div class="box-content">
                     @if($message)
@@ -26,7 +26,7 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Name</th>
+                            <th>Nombre</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -55,7 +55,7 @@
     @else
         <div class="alert alert-info">
             <button type="button" class="close" data-dismiss="alert">×</button>
-            No categories found
+            No hay categorias
         </div>
     @endif
 @stop
